@@ -4,9 +4,9 @@
       {{ msg }}
     </div>
 
-    <div class = 'level'>
-      <div class = 'level-left'>
-        <div class = 'level-item'>
+    <div class='level'>
+      <div class='level-left'>
+        <div class='level-item'>
           <b-taglist attached>
             <b-tag type='is-dark'>node</b-tag>
             <b-tag type='is-primary'>10.6.0</b-tag>
@@ -14,7 +14,7 @@
         </div>
       </div>
 
-      <div class = 'level-item'>
+      <div class='level-item'>
         <b-icon
           icon='fire'
           size='is-large'
@@ -22,8 +22,8 @@
         </b-icon>
       </div>
 
-      <div class = 'level-right'>
-        <div class = 'level-item'>
+      <div class='level-right'>
+        <div class='level-item'>
           <b-taglist attached>
             <b-tag type='is-dark'>npm</b-tag>
             <b-tag type='is-info'>6.1.0</b-tag>

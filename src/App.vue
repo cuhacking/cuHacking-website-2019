@@ -1,6 +1,26 @@
 <template>
   <div id='app'>
-    <HelloWorld msg='Welcome to Your Vue.js + TypeScript App'/>
+    <!-- <nav class='navbar is-transparent'>
+      <div class='navbar-brand'>
+        <a class='navbar-item' href='https://bulma.io'>
+          <img src='https://bulma.io/images/bulma-logo.png' alt='Bulma: a modern CSS framework based on Flexbox' width='112' height='28'>
+        </a>
+        <div class='navbar-burger burger' data-target='navbarExampleTransparentExample'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div id='navbarExampleTransparentExample' class='navbar-menu'>
+        <div class='navbar-end'>
+          <router-link to='/'><a class='navbar-item'>Home</a></router-link>
+          <router-link to='/splash'><a class='navbar-item'>Splash</a></router-link>
+          <router-link to='/404'><a class='navbar-item'>404</a></router-link>
+        </div>
+      </div>
+    </nav> -->
+    <router-view/>
   </div>
 </template>
 
