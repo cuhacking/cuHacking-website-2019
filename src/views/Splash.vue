@@ -1,6 +1,6 @@
 <template>
   <div class='about'>
-    <section class='hero is-dark is-fullheight'>
+    <section class='hero is-twitter is-fullheight'>
       <!-- Hero head: will stick at the top -->
       <div class='hero-head'>
         <header class='navbar'>
@@ -20,9 +20,7 @@
           <h1 class='title'>
             CU Hacking begins in :
           </h1>
-          <h2 class='subtitle'>
-            200 days 4h 20m 42s
-          </h2>
+          <countdown date='February 2, 2019'/>
           <h5 class='subtitle is-5'>
             February 2<sup>nd</sup> - 4<sup>th</sup> 2019 | 36 Hours | Ottawa, ON
           </h5>
@@ -37,3 +35,14 @@
     </section>
   </div>
 </template>
+
+<script>
+import Countdown from '@/components/Countdown.vue';
+
+export default {
+  name: 'splash',
+  components: {
+    Countdown,
+  },
+};
+</script>
