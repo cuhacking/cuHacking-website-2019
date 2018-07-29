@@ -7,15 +7,15 @@ import PageNotFound from './views/PageNotFound.vue';
 Vue.use(Router);
 
 export default new Router({
-  // mode: 'history',
+  mode: 'history',
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: Home,
     },
     {
-      path: '/splash',
+      path: '/',
       name: 'splash',
       component: Splash,
     },
