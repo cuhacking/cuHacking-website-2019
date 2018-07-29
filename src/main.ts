@@ -3,9 +3,7 @@ import App from './App.vue';
 import Buefy from 'buefy';
 import router from './router';
 
-Vue.use(Buefy, {
-  defaultIconPack: 'fa',
-});
+Vue.use(Buefy);
 
 Vue.config.productionTip = false;
 

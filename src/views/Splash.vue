@@ -15,15 +15,14 @@
           </div>
           <div id='navbarMenu' class='navbar-menu'>
             <div class='navbar-end'>
-              <div class='tabs is-right'>
-                <ul>
-                  <li class='is-active'><a>Home</a></li>
-                  <li><a href='#examples'>Examples</a></li>
-                  <li><a href='#features'>Features</a></li>
-                  <li><a href='#team'>Team</a></li>
-                  <li><a href='#help'>Help</a></li>
-                </ul>
-              </div>
+              <div class="tabs">
+  <ul>
+    <li class="is-active"><a>Pictures</a></li>
+    <li><a>Music</a></li>
+    <li><a>Videos</a></li>
+    <li><a>Documents</a></li>
+  </ul>
+</div>
             </div>
           </div>
         </div>
@@ -42,16 +41,20 @@
             Sign up for our mailing list below to stay updated.
           </h2>
           <div class='box'>
-            <div class='field is-grouped'>
-              <p class='control is-expanded'>
-                <input class='input' type='text' placeholder='Enter your email' v-model='email'>
-              </p>
-              <p class='control'>
-                <a class='button is-info'>
-                  Notify Me
-                </a>
-              </p>
-            </div>
+            <form @submit.prevent='onSubmit'>
+              <b-field>
+                <b-input
+                  expanded
+                  v-model='model.email'
+                  placeholder='Email address'
+                  type='email'
+                  icon='email'
+                ></b-input>
+                <p class='control'>
+                  <button class='button is-primary' type='submit'>Notify Me</button>
+                </p>
+              </b-field>
+            </form>
           </div>
         </div>
       </div>
@@ -64,22 +67,22 @@
             <div class='navbar-start'>
               <span class='navbar-item'>
                 <a href='https://facebook.com/cuhacking'>
-                  <i class="fab fa-facebook-f"></i>
+                  <b-icon icon='facebook'></b-icon>
                 </a>
               </span>
               <span class='navbar-item'>
                 <a href='https://twitter.com/cuhacking'>
-                  <i class="fab fa-twitter"></i>
+                  <b-icon icon='twitter'></b-icon>
                 </a>
               </span>
               <span class='navbar-item'>
-                <i class="fab fa-github"></i>
+                <b-icon icon='github-circle'></b-icon>
                 <a href='https://github.com/cuhacking'>
                 </a>
               </span>
               <span class='navbar-item'>
                 <a href='mailto:todo@cuhacking.com'>
-                  <i class="far fa-envelope"></i>
+                  <b-icon icon='email-outline'></b-icon>
                 </a>
               </span>
             </div>
@@ -95,8 +98,18 @@ import Countdown from '@/components/Countdown.vue';
 
 export default {
   name: 'splash',
-  data: {
-    email: 'bober@gmail.com',
+  data() {
+    return {
+      model: {
+        email: ''
+      },
+      tabIndex: 0,
+    };
+  },
+  methods: {
+    onSubmit() {
+      console.log(this.email)
+    }
   },
   components: {
     Countdown,
