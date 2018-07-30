@@ -4,31 +4,38 @@
       <nav class='navbar is-transparent'>
         <div class='container'>
           <div class='navbar-brand'>
-            <a class='navbar-item' href='../'>
-              <img src='http://bulma.io/images/bulma-type-white.png' alt='Logo'>
+            <a class='navbar-item' href='/'>
+              <img src='img/banner.png' alt='cuHacking logo'>
             </a>
-            <span class='navbar-burger burger' data-target='navbarMenu'>
+            <div class='navbar-burger burger' data-target='navbarExampleTransparentExample'>
               <span></span>
               <span></span>
               <span></span>
-            </span>
+            </div>
           </div>
-          <div id='navbarMenu' class='navbar-menu'>
+
+          <div id='navbarExampleTransparentExample' class='navbar-menu'>
             <div class='navbar-end'>
-              <div class="tabs">
-  <ul>
-    <li class="is-active"><a>Pictures</a></li>
-    <li><a>Music</a></li>
-    <li><a>Videos</a></li>
-    <li><a>Documents</a></li>
-  </ul>
-</div>
+              <a class='navbar-item' href='/'>
+                Home
+              </a>
+              <!-- <a class='navbar-item' href='#about'>
+                About
+              </a>
+              <a class='navbar-item' href='#schedule'>
+                Schedule
+              </a>
+              <a class='navbar-item' href='#sponsors'>
+                Sponsors
+              </a>
+              <a class='navbar-item' href='#faq'>
+                FAQ
+              </a> -->
             </div>
           </div>
         </div>
       </nav>
     </div>
-
     <div class='hero-body'>
       <div class='container has-text-centered'>
         <div class='column is-6 is-offset-3'>
@@ -38,30 +45,14 @@
           <countdown date='February 2, 2019'></countdown>
           <h2 class='subtitle'>
             February 2<sup>nd</sup> - 4<sup>th</sup> 2019 | 36 Hours | Ottawa, ON <br>
-            Sign up for our mailing list below to stay updated.
+            Sign up for our mailing list below to stay updated
           </h2>
-          <div class='box'>
-            <form @submit.prevent='onSubmit'>
-              <b-field>
-                <b-input
-                  expanded
-                  v-model='model.email'
-                  placeholder='Email address'
-                  type='email'
-                  icon='email'
-                ></b-input>
-                <p class='control'>
-                  <button class='button is-primary' type='submit'>Notify Me</button>
-                </p>
-              </b-field>
-            </form>
-          </div>
+          <email-signup></email-signup>
         </div>
       </div>
     </div>
-
     <div class='hero-foot'>
-      <nav class='navbar'>
+      <nav class='navbar is-transparent'>
         <div class='container'>
           <div id='navbarMenu' class='navbar-menu'>
             <div class='navbar-start'>
@@ -76,8 +67,8 @@
                 </a>
               </span>
               <span class='navbar-item'>
-                <b-icon icon='github-circle'></b-icon>
                 <a href='https://github.com/cuhacking'>
+                  <b-icon icon='github-circle'></b-icon>
                 </a>
               </span>
               <span class='navbar-item'>
@@ -95,31 +86,24 @@
 
 <script>
 import Countdown from '@/components/Countdown.vue';
+import EmailSignup from '@/components/EmailSignup.vue';
 
 export default {
   name: 'splash',
   data() {
     return {
-      model: {
-        email: ''
-      },
-      tabIndex: 0,
     };
-  },
-  methods: {
-    onSubmit() {
-      console.log(this.email)
-    }
   },
   components: {
     Countdown,
+    EmailSignup,
   },
 };
 </script>
 
 <style>
 html,body {
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', monospace;
 }
 .hero.is-info {
   background: linear-gradient(
