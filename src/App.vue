@@ -6,6 +6,7 @@
     Schedule
     FAQ
     Contact
+    Footer
 </template>
 
 <script>
@@ -15,6 +16,7 @@ import Sponsors from "./components/Sponsors.vue";
 import FAQ from "./components/FAQ.vue";
 import Contact from "./components/Contact.vue";
 import Schedule from "./components/Schedule.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "app",
@@ -24,31 +26,36 @@ export default {
     Sponsors,
     FAQ,
     Contact,
-    Schedule
+    Schedule,
+    Footer
   }
 };
 </script>
-<style lang="stylus">
-#app
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
+<style lang="scss">
+@import "./assets/buefy";
 
-body 
-  margin 0
-  font normal 75% Arial, Helvetica, sans-serif
-canvas 
-  display block
-  vertical-align bottom
-#particles-js 
-  position absolute
-  width 100%
-  height 100%
-  background-color #fdedb2
-  background-image url("")
-  background-repeat no-repeat
-  background-size cover
-  background-position 50% 50%
-
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fdedb2;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
 </style>

@@ -14,6 +14,8 @@ nav.navbar(role='navigation' aria-label='main navigation')
         | Home
       a.navbar-item(href='#sponsors')
         | Sponsors
+      a.navbar-item(href='#schedule')
+        | Schedule
       a.navbar-item(href='#faq')
         | FAQ
       a.navbar-item(href='#contact')

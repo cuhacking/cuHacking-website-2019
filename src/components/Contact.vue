@@ -34,7 +34,9 @@ section.section
 <script>
 export default {
   name: "Contact",
-  data() {}
+  data() {
+    return {};
+  }
 };
 </script>
 

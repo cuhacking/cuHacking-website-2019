@@ -11,6 +11,7 @@ section#home.hero.is-fullheight-with-navbar
   )
   .hero-body
     .container
+      img(src='img/logo_text.png' alt='cuHacking Logo')
       h1.title
         | Hero title
       h2.subtitle
