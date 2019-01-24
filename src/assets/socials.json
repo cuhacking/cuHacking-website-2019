@@ -1,0 +1,27 @@
+[
+	{
+		"name": "Twitter",
+		"link": "https://twitter.com/cuHacking",
+		"icon": ""
+	},
+	{
+		"name": "Facebook",
+		"link": "https://www.facebook.com/cuHacking",
+		"icon": ""
+	},
+	{
+		"name": "Instagram",
+		"link": "https://www.instagram.com/cuHacking",
+		"icon": ""
+	},
+	{
+		"name": "Github",
+		"link": "https://github.com/cuhacking",
+		"icon": ""
+	},
+	{
+		"name": "Slack",
+		"link": "https://cuhacking-2019.slack.com",
+		"icon": ""
+	}
+]

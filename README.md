@@ -1,14 +1,4 @@
-# cuhacks19
-
-## Migrating last years website
-Rename the current repository: cuhacking.github.io -> cuhacksYY
-Edit the CNAME file: YYYY.cuhacking.com
-Create a DNS record for the subdomain
-  host = YYYY
-  value = cuhacking.github.io
-
-Create a new repository named cuhacking.github.io
-Add a CNAME file: cuhacking.com
+# cuhacking2019
 
 ## Project setup
 ```
@@ -25,6 +15,11 @@ npm run serve
 npm run build
 ```
 
+### Run your tests
+```
+npm run test
+```
+
 ### Lints and fixes files
 ```
 npm run lint
@@ -34,3 +29,6 @@ npm run lint
 ```
 npm run test:unit
 ```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

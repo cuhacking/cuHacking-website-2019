@@ -1,0 +1,67 @@
+{
+	"tera": [
+		{
+			"name": "Innovapost",
+			"link": "https://innovapost.com/",
+			"img": "innovapost.png"
+		}	
+	],
+	"giga": [],
+	"mega": [
+		{
+			"name": "Communications Security Establishment",
+			"link": "https://twitter.com/cse_cst",
+			"img": "cse.png"
+		},
+		{
+			"name": "March Networks",
+			"link": "https://www.marchnetworks.com/",
+			"img": "march_networks.png"
+		},
+		{
+			"name": "Qlik",
+			"link": "https://www.qlik.com/",
+			"img": "qlik.png"
+		}
+	],
+	"kilo": [],
+	"micro": [
+		{
+			"name": "Electronic Arts",
+			"link": "https://ea.com",
+			"img": "ea.png"
+		},
+		{
+			"name": "InGenius",
+			"link": "https://www.ingenius.com/",
+			"img": "ingenius.png"
+		},
+		{
+			"name": "InvisionApp",
+			"link": "https://www.invisionapp.com/",
+			"img": "invisionapp.png"
+		}
+	],
+	"partner": [
+		{
+			"name": "Carleton University - Department of Systems and Computer Engineering",
+			"link": "https://carleton.ca/sce/",
+			"img": "carleton_sce.png"
+		},
+		{
+			"name": "Carleton University - School of Computer Science",
+			"link": "https://carleton.ca/scs/",
+			"img": "carleton_scs.png"
+		},
+		{
+			"name": "Major League Hacking",
+			"link": "https://mlh.io",
+			"img": "mlh.png"
+		},
+		{
+			"name": "Sticker Mule",
+			"link": "http://hackp.ac/mlh-stickermule-hackathons",
+			"img": "sticker_mule.png"
+		}
+	]
+}

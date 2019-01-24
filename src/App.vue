@@ -1,47 +1,51 @@
-<template>
-  <div id='app'>
-    <router-view/>
-  </div>
+<template lang="pug">
+  #app
+    Navbar
+    Home
+    Sponsors
+    FAQ
+    Contact
 </template>
 
-<script lang='ts'>
-import { Component, Vue } from 'vue-property-decorator';
+<script>
+import Navbar from "./components/Navbar.vue";
+import Home from "./components/Home.vue";
+import Sponsors from "./components/Sponsors.vue";
+import FAQ from "./components/FAQ.vue";
+import Contact from "./components/Contact.vue";
 
-@Component({})
-export default class App extends Vue {}
+export default {
+  name: "app",
+  components: {
+    Navbar,
+    Home,
+    Sponsors,
+    FAQ,
+    Contact
+  }
+};
 </script>
+<style lang="stylus">
+#app
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  text-align center
+  color #2c3e50
 
-<style lang='scss'>
-// Import Bulma's core
-@import '~bulma/sass/utilities/_all';
-
-// Set your colors
-$primary: #8c67ef;
-$primary-invert: findColorInvert($primary);
-$twitter: #4099ff;
-$twitter-invert: findColorInvert($twitter);
-
-// Setup $colors to use as bulma classes (e.g. 'is-twitter')
-$colors: (
-    'white': ($white, $black),
-    'black': ($black, $white),
-    'light': ($light, $light-invert),
-    'dark': ($dark, $dark-invert),
-    'primary': ($primary, $primary-invert),
-    'info': ($info, $info-invert),
-    'success': ($success, $success-invert),
-    'warning': ($warning, $warning-invert),
-    'danger': ($danger, $danger-invert),
-    'twitter': ($twitter, $twitter-invert)
-);
-
-// Links
-$link: $primary;
-$link-invert: $primary-invert;
-$link-focus-border: $primary;
-
-// Import Bulma and Buefy styles
-@import '~bulma';
-@import '~buefy/src/scss/buefy';
+body 
+  margin 0
+  font normal 75% Arial, Helvetica, sans-serif
+canvas 
+  display block
+  vertical-align bottom
+#particles-js 
+  position absolute
+  width 100%
+  height 100%
+  background-color #fdedb2
+  background-image url("")
+  background-repeat no-repeat
+  background-size cover
+  background-position 50% 50%
 
 </style>
