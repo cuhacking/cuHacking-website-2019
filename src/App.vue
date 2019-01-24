@@ -3,6 +3,7 @@
     Navbar
     Home
     Sponsors
+    Schedule
     FAQ
     Contact
 </template>
@@ -13,6 +14,7 @@ import Home from "./components/Home.vue";
 import Sponsors from "./components/Sponsors.vue";
 import FAQ from "./components/FAQ.vue";
 import Contact from "./components/Contact.vue";
+import Schedule from "./components/Schedule.vue";
 
 export default {
   name: "app",
@@ -21,7 +23,8 @@ export default {
     Home,
     Sponsors,
     FAQ,
-    Contact
+    Contact,
+    Schedule
   }
 };
 </script>

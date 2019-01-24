@@ -1,0 +1,70 @@
+{
+	"startDay": "2019-02-16",
+	"endDay": "2019-02-17",
+
+	"events": {
+		"main": [
+			{
+				"name": "Registation",
+				"location": "RB",
+				"start": "1-09:00",
+				"end": "1-10:30",
+				"description": "Come get checked in"
+			},
+			{
+				"name": "Opening Ceremonies",
+				"location": "RB",
+				"start": "1-10:45",
+				"end": "1-11:45",
+				"description": "Hear sponsor challenges and get inspired"
+			},
+			{
+				"name": "Hacking Begins",
+				"location": "RB",
+				"start": "1-12:00",
+				"description": "Get to hacking"
+			}
+		],
+		"food": [
+			{
+				"name": "Lunch",
+				"location": "UC",
+				"start": "1-12:00",
+				"end": "1-13:30",
+				"description": "Sandwiches and pop"
+			},
+			{
+				"name": "Dinner",
+				"location": "RB",
+				"start": "1-17:30",
+				"end": "1-19:30",
+				"description": "Burgers and pasta"
+			}
+		],
+		"activity": [
+			{
+				"name": "Spicy Noodle UI Challenge",
+				"location": "UC 201",
+				"start": "1-22:00",
+				"end": "1-22:50",
+				"description": "Eat hot noodles and make things look nice"
+			}
+		],
+		"workshop": [
+			{
+				"name": "Team Building",
+				"location": "RB",
+				"start": "1-11:45",
+				"end": "1-12:30",
+				"description": "Find people to spend 24 hours with"
+			},
+			{
+				"name": "Web Dev",
+				"location": "RB 336",
+				"start": "1-14:30",
+				"end": "1-15:00",
+				"description": "Learn some reasons the web and javascript are weird"
+			}
+		]
+	}
+}
