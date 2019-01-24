@@ -1,7 +1,7 @@
 <template lang="pug">
 section.section
   #faq
-    h1 Frequently Asked Questions
+    h3.thick.bg Frequently Asked Questions
 
     .container.is-fluid
       .columns.is-multiline.is-centered.is-vcentered

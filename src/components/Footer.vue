@@ -1,7 +1,7 @@
 <template lang="pug">
 section.section
   #footer
-    h1 Footer
+    h3 Footer
 </template>
 
 <script>

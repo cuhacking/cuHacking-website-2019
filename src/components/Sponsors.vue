@@ -1,7 +1,7 @@
 <template lang="pug">
 section.section
   #sponsors
-    h2 Sponsors
+    h3.thick.bg Sponsors
 
     .container.is-widescreen
 

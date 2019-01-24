@@ -13,9 +13,9 @@ section#home.hero.is-fullheight-with-navbar
     .container
       img(src='img/logo_text.png' alt='cuHacking Logo')
       h1.title
-        | Hero title
+        | February 16<sup>th</sup> - 17<sup>th</sup>, 2019
       h2.subtitle
-        | Hero subtitle
+        | @ Carleton University
 </template>
 
 <script>

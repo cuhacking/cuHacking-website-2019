@@ -1,7 +1,7 @@
 <template lang="pug">
 section.section
   #contact
-    h1 Contact
+    h3.thick.bg Contact
 
     .container
       .field

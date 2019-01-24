@@ -1,7 +1,7 @@
 <template lang="pug">
 section.section
   #schedule
-    h1 Schedule
+    h3.thick.bg Schedule
 
     ul
       li(v-for="type in events")

@@ -21,6 +21,9 @@ nav.navbar(role='navigation' aria-label='main navigation')
       a.navbar-item(href='#contact')
         | Contact
     .navbar-end
+      a#mlh-trust-badge(href='https://mlh.io/seasons/na-2019/events', target='_blank')
+        img(src='/img/mlh_banner.svg')
+
       //- TODO put the mlh banner here
       //- TODO have the burger menu activate navbar disappear when a link is clicked
 </template>
@@ -35,3 +38,15 @@ export default {
   }
 };
 </script>
+
+<style lang='stylus'>
+#mlh-trust-badge
+  display: block
+  max-width: 100px
+  min-width: 60px
+  position: fixed
+  right: 50px
+  top: 0
+  width: 10%
+  z-index: 60000
+</style>

@@ -40,14 +40,17 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
 body {
   margin: 0;
   font: normal 75% Arial, Helvetica, sans-serif;
 }
+
 canvas {
   display: block;
   vertical-align: bottom;
 }
+
 #particles-js {
   position: absolute;
   width: 100%;
@@ -57,5 +60,27 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+}
+
+h3.thick {
+  font-size: 60px;
+  padding-bottom: 35px;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-weight: 800;
+  color: #222;
+}
+
+.bg {
+  width: 100%;
+  font-size: 60px;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 800;
+  color: $white !important;
+  background: $secondary;
+  background: linear-gradient(to bottom, #9f021d 0%, #9f021d 36%, #9f021d 72%, #9f021d 100%);
 }
 </style>
