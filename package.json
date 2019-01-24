@@ -80,7 +80,7 @@
     "testURL": "http://localhost/"
   },
   "gitHooks": {
-    "pre-commit": "lint-staged"
+    "pre-commit": ""
   },
   "lint-staged": {
     "*.js": [
