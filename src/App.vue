@@ -1,9 +1,11 @@
 <template lang="pug">
   #app
     Navbar
+    Social
     Home
     Sponsors
     Schedule
+    Prizes
     FAQ
     Contact
     Footer
@@ -17,6 +19,8 @@ import FAQ from "./components/FAQ.vue";
 import Contact from "./components/Contact.vue";
 import Schedule from "./components/Schedule.vue";
 import Footer from "./components/Footer.vue";
+import Social from "./components/Social.vue";
+import Prizes from "./components/Prizes.vue";
 
 export default {
   name: "app",
@@ -27,7 +31,9 @@ export default {
     FAQ,
     Contact,
     Schedule,
-    Footer
+    Footer,
+    Social,
+    Prizes
   }
 };
 </script>
@@ -74,13 +80,19 @@ h3.thick {
 .bg {
   width: 100%;
   font-size: 60px;
-  padding-top: 100px !important;
-  padding-bottom: 100px !important;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 800;
   color: $white !important;
   background: $secondary;
-  background: linear-gradient(to bottom, #9f021d 0%, #9f021d 36%, #9f021d 72%, #9f021d 100%);
+  background: linear-gradient(
+    to bottom,
+    #9f021d 0%,
+    #9f021d 36%,
+    #9f021d 72%,
+    #9f021d 100%
+  );
 }
 </style>

@@ -5,7 +5,9 @@ import VueParticles from "vue-particles";
 
 import "buefy/dist/buefy.css";
 
-Vue.use(Buefy);
+Vue.use(Buefy, {
+  defaultIconPack: "fab"
+});
 Vue.use(VueParticles);
 
 Vue.config.productionTip = false;

@@ -1,5 +1,5 @@
 <template lang="pug">
-nav.navbar(role='navigation' aria-label='main navigation')
+nav.navbar.is-transparent(role='navigation' aria-label='main navigation')
   .navbar-brand
     a.navbar-item(href='/')
       img(src='/img/logo.png' height='28')
@@ -24,7 +24,6 @@ nav.navbar(role='navigation' aria-label='main navigation')
       a#mlh-trust-badge(href='https://mlh.io/seasons/na-2019/events', target='_blank')
         img(src='/img/mlh_banner.svg')
 
-      //- TODO put the mlh banner here
       //- TODO have the burger menu activate navbar disappear when a link is clicked
 </template>
 
@@ -39,7 +38,7 @@ export default {
 };
 </script>
 
-<style lang='stylus'>
+<style scoped lang='stylus'>
 #mlh-trust-badge
   display: block
   max-width: 100px
@@ -49,4 +48,7 @@ export default {
   top: 0
   width: 10%
   z-index: 60000
+  
+.navbar-item img
+  margin-right: 10px
 </style>

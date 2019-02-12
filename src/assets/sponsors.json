@@ -2,7 +2,7 @@
 	"tera": [
 		{
 			"name": "Innovapost",
-			"link": "https://innovapost.com/",
+			"link": "https://innovapost.com",
 			"img": "innovapost.png"
 		}	
 	],
@@ -15,42 +15,47 @@
 		},
 		{
 			"name": "March Networks",
-			"link": "https://www.marchnetworks.com/",
+			"link": "https://www.marchnetworks.com",
 			"img": "march_networks.png"
 		},
 		{
 			"name": "Qlik",
-			"link": "https://www.qlik.com/",
+			"link": "https://www.qlik.com",
 			"img": "qlik.png"
 		}
 	],
 	"kilo": [],
 	"micro": [
 		{
-			"name": "Electronic Arts",
+			"name": "STYLElectronic Arts",
 			"link": "https://ea.com",
 			"img": "ea.png"
 		},
 		{
 			"name": "InGenius",
-			"link": "https://www.ingenius.com/",
+			"link": "https://www.ingenius.com",
 			"img": "ingenius.png"
 		},
 		{
 			"name": "InvisionApp",
-			"link": "https://www.invisionapp.com/",
+			"link": "https://www.invisionapp.com",
 			"img": "invisionapp.png"
+		},
+		{
+			"name": "Martello Technologies",
+			"link": "https://martellotech.com",
+			"img": "martello.png"
 		}
 	],
 	"partner": [
 		{
 			"name": "Carleton University - Department of Systems and Computer Engineering",
-			"link": "https://carleton.ca/sce/",
+			"link": "https://carleton.ca/sce",
 			"img": "carleton_sce.png"
 		},
 		{
 			"name": "Carleton University - School of Computer Science",
-			"link": "https://carleton.ca/scs/",
+			"link": "https://carleton.ca/scs",
 			"img": "carleton_scs.png"
 		},
 		{

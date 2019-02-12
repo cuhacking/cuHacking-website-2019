@@ -1,0 +1,49 @@
+[
+	{
+		"title": "1st Place",
+		"prize": "Ada Fruit",
+		"cost": 500,
+		"link": "https://www.adafruit.com/product/3268"
+	},
+	{
+		"title": "2nd Place",
+		"prize": "VR Sets",
+		"cost": 400
+	},
+	{
+		"title": "3rd Place",
+		"prize": "Wireless Earphones",
+		"cost": 300
+	},
+	{
+		"title": "Most Involved Hacker",
+		"prize": "Drone",
+		"cost": 100
+	},
+	{
+		"title": "Raven Award",
+		"prize": "Carleton University Long Sleeve T-Shirts",
+		"cost": 100,
+		"link": "https://www.bkstr.com/ProductDisplay?urlRequestType=Base&catalogId=10001&categoryId=10040&productId=77093165&errorViewName=ProductDisplayErrorViewtop_category=10029&storeId=10927"
+	},
+	{
+		"title": "Best MLH Hardware Hack",
+		"prize": "Raspberry Pi Model A+",
+		"cost": 100,
+		"link": "https://www.buyapi.ca/product/raspberry-pi-model-a-256mb-ram"
+	},
+	{
+		"title": "Best UI/UX Hack",
+		"prize": "Invision Subscription"
+	},
+	{
+		"title": "Most Popular Hack (Devpost)",
+		"prize": "Drinkable Lego Mug",
+		"cost": 70,
+		"link": "https://www.amazon.ca/dp/B07BZLTGYD"
+	},
+	{
+		"title": "Underdog Award (High School)",
+		"prize": "Prize from SCS"
+	}
+]

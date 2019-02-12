@@ -6,7 +6,7 @@ section.section
     .container.is-fluid
       .columns.is-multiline.is-centered.is-vcentered
         .column.is-one-third(v-for="qa in questions" v-bind:key="qa.question")
-          p {{ qa.question }} - {{ qa.answer }}
+          p(v-html="convert(qa)")
 
 </template>
 
@@ -19,6 +19,11 @@ export default {
     return {
       questions: QuestionData
     };
+  },
+  methods: {
+    convert(qa) {
+      return `${qa.question} - ${qa.answer}`;
+    }
   }
 };
 </script>

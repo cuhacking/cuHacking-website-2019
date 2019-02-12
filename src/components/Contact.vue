@@ -3,31 +3,20 @@ section.section
   #contact
     h3.thick.bg Contact
 
-    .container
-      .field
-        label.label Name
-        .control
-          input.input(type='text', placeholder='Text input')
-      .field
-        label.label Email
-        .control.has-icons-left.has-icons-right
-          input.input.is-danger(type='email', placeholder='Email input')
-          span.icon.is-small.is-left
-            i.fas.fa-envelope
-          span.icon.is-small.is-right
-            i.fas.fa-exclamation-triangle
-        p.help.is-danger This email is invalid
-      .field
-        label.label Subject
-        .control
-          input.input(type='text', placeholder='Text input')
-      .field
-        label.label Message
-        .control
-          textarea.textarea(placeholder='Textarea')
-      .field.is-grouped
-        .control
-          button.button.is-link Send
+    .form
+      b-field(horizontal='' label='Subject')
+        b-input(name='subject', expanded='')
+      b-field(horizontal='', label='From')
+        b-input(name='name', placeholder='Name', expanded='')
+        b-input(name='email', type='email', placeholder='nobody@nowhere.com', expanded='')
+      b-field(horizontal='', label='Message')
+        b-input(type='textarea')
+      b-field(horizontal='')
+        // Label left empty for spacing
+        p.control
+          button.button.is-primary
+            | Send message
+
 
 </template>
 
@@ -41,4 +30,6 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+.form
+  margin-top: 20px
 </style>

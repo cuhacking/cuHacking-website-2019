@@ -1,27 +1,22 @@
 [
 	{
-		"name": "Twitter",
-		"link": "https://twitter.com/cuHacking",
-		"icon": ""
-	},
-	{
 		"name": "Facebook",
 		"link": "https://www.facebook.com/cuHacking",
-		"icon": ""
+		"icon": "facebook"
 	},
 	{
 		"name": "Instagram",
 		"link": "https://www.instagram.com/cuHacking",
-		"icon": ""
+		"icon": "instagram"
+	},
+	{
+		"name": "Twitter",
+		"link": "https://twitter.com/cuHacking",
+		"icon": "twitter"
 	},
 	{
 		"name": "Github",
 		"link": "https://github.com/cuhacking",
-		"icon": ""
-	},
-	{
-		"name": "Slack",
-		"link": "https://cuhacking-2019.slack.com",
-		"icon": ""
+		"icon": "github"
 	}
 ]
