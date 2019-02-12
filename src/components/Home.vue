@@ -17,10 +17,12 @@ section#home.hero.is-fullheight-with-navbar
         | @ 
         a(href="https://carleton.ca") Carleton University 
       <Info />
+      <Countdown :date="this.start"/>
 </template>
 
 <script>
 import Info from "./Front/Info";
+import Countdown from "./Countdown";
 import ScheduleData from "../assets/schedule.json";
 
 export default {
@@ -32,7 +34,8 @@ export default {
     };
   },
   components: {
-    Info
+    Info,
+    Countdown
   },
   computed: {
     dateHTML() {
