@@ -45,22 +45,22 @@ export default {
       calendarList: [
         {
           id: "1",
-          name: "main",
+          name: "Main",
           bgColor: "#74b9ff"
         },
         {
           id: "2",
-          name: "food",
+          name: "Food",
           bgColor: "#55efc4"
         },
         {
           id: "3",
-          name: "workshop",
+          name: "Workshop",
           bgColor: "#a29bfe"
         },
         {
           id: "4",
-          name: "activity",
+          name: "Activity",
           bgColor: "#ff7675"
         }
       ]

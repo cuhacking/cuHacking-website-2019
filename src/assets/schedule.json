@@ -3,53 +3,53 @@
 	"endDay": "2019-02-17",
 
 	"eventTypes": {
-		"main": "1",
-		"food": "2",
-		"workshop": "3",
-		"activity": "4"
+		"Main": "1",
+		"Food": "2",
+		"Workshop": "3",
+		"Activity": "4"
 	},
 
 	"events": [
 		{
-			"type": "main",
+			"type": "Main",
 			"title": "Registation",
-			"location": "UC Atrium",
+			"location": "Atrium",
 			"start": "2019-02-16T08:30:00",
 			"end": "2019-02-16T10:00:00",
-			"description": "Come get checked in"
+			"description": "Come and sign in to cuHacking! You will be given a swag bag (with lots of awesome goodies) and a shirt!"
 		},
 		{
-			"type": "activity",
+			"type": "Activity",
 			"title": "Happy Hour",
 			"location": "RB 2222 + 2224",
 			"start": "2019-02-16T08:30",
 			"end": "2019-02-16T10:00",
-			"description": "Mingle like a pringle"
+			"description": "This is your prime chance for networking. Get to know our amazing sponsors and talk about possible career opportunities at their company."
 		},
 		{
-			"type": "main",
+			"type": "Main",
 			"title": "Opening Ceremony",
 			"location": "RB 2220",
 			"start": "2019-02-16T10:00",
 			"end": "2019-02-16T10:45",
-			"description": "Hear sponsor challenges and get inspired"
+			"description": "Debriefing about Housekeeping, sponsor intros, a message from our MLH rep Emily and much more! Also, the best way to kickstart the event."
 		},
 		{
-			"type": "main",
+			"type": "Main",
 			"title": "Hacking Begins",
 			"start": "2019-02-16T11:00",
-			"description": "Get to hacking"
+			"description": "he kickoff begins! You have 24 hours to complete your hack. If you do not have a team we will help you find one at the event. Get ready for an awesome weekend!"
 		},
 		{
-			"type": "food",
+			"type": "Food",
 			"title": "Lunch",
 			"location": "RB 2228",
 			"start": "2019-02-16T12:00",
 			"end": "2019-02-16T13:15",
-			"description": "Carleton dining service is cooking it up"
+			"description": "Carleton Dining Services has provided us with TODO"
 		},
 		{
-			"type": "workshop",
+			"type": "Workshop",
 			"title": "Docker Workshop",
 			"location": "RB 3201",
 			"start": "2019-02-16T13:15",
@@ -57,7 +57,7 @@
 			"description": "TODO"
 		},
 		{
-			"type": "workshop",
+			"type": "Workshop",
 			"title": "Martello Talk",
 			"location": "RB 2200",
 			"start": "2019-02-16T13:30",
@@ -65,7 +65,15 @@
 			"description": "TODO"
 		},
 		{
-			"type": "activity",
+			"type": "Activity",
+			"title": "MLH Banner Photobooth",
+			"location": "Atrium",
+			"start": "2019-02-16T13:30",
+			"end": "2019-02-16T14:30",
+			"description": "TODO"
+		},
+		{
+			"type": "Activity",
 			"title": "Speed Dating with Sponsors",
 			"location": "RB 2311",
 			"start": "2019-02-16T13:45",
@@ -73,7 +81,7 @@
 			"description": "TODO"
 		},
 		{
-			"type": "workshop",
+			"type": "Workshop",
 			"title": "Innovapost Workshop",
 			"location": "RB 3201",
 			"start": "2019-02-16T14:45",
@@ -81,7 +89,7 @@
 			"description": "TODO"
 		},
 		{
-			"type": "workshop",
+			"type": "Workshop",
 			"title": "Android Workshop",
 			"location": "RB 2311",
 			"start": "2019-02-16T16:00",
@@ -89,7 +97,15 @@
 			"description": "TODO"
 		},
 		{
-			"type": "workshop",
+			"type": "Activity",
+			"title": "Piece it!",
+			"location": "RB 2224",
+			"start": "2019-02-16T16:30",
+			"end": "2019-02-16T17:15",
+			"description": "Work with sponsors and hackers under a time constraint to solve a series of puzzles! Hackers will be paired with sponsors and piece together this intense puzzle. First one to finish wins!"
+		},
+		{
+			"type": "Workshop",
 			"title": "Tech Panel",
 			"location": "RB 2200",
 			"start": "2019-02-16T16:15",
@@ -97,15 +113,15 @@
 			"description": "TODO"
 		},
 		{
-			"type": "workshop",
-			"title": "GraphQL Workshop",
+			"type": "Workshop",
+			"title": "Serverless Computing Workshop",
 			"location": "RB 3201",
 			"start": "2019-02-16T17:00",
 			"end": "2019-02-16T17:45",
 			"description": "TODO"
 		},
 		{
-			"type": "workshop",
+			"type": "Workshop",
 			"title": "Intro to Site Reliability Seminar",
 			"location": "RB 2311",
 			"start": "2019-02-16T17:45",
@@ -113,75 +129,75 @@
 			"description": "TODO"
 		},
 		{
-			"type": "food",
+			"type": "Food",
 			"title": "Dinner",
 			"location": "RB 2228",
 			"start": "2019-02-16T18:45",
 			"end": "2019-02-16T19:45",
-			"description": "Fill your bellies"
+			"description": "Carleton Dining Services has provided us with TODO"
 		},
 		{
-			"type": "activity",
+			"type": "Activity",
 			"title": "MLH Cup Stacking",
 			"location": "RB 2224",
 			"start": "2019-02-16T20:00",
 			"end": "2019-02-16T20:15",
-			"description": ""
+			"description": "TODO"
 		},
 		{
-			"type": "activity",
+			"type": "Activity",
 			"title": "Smash Ultimate + Mario Kart Tournaments",
 			"location": "RB 2311",
 			"start": "2019-02-16T20:00",
 			"end": "2019-02-16T21:00",
-			"description": "Are you even a gamer"
+			"description": "Smash Ultimate and the new Mario Kart were recently released on the switch. Compete against other hackers and sponsors to win EA games!"
 		},
 		{
-			"type": "activity",
+			"type": "Activity",
 			"title": "Slideshow Karaoke",
 			"location": "RB 3201",
 			"start": "2019-02-16T20:45",
 			"end": "2019-02-16T22:15",
-			"description": "TODO"
+			"description": "ow off your improve skills as you do try to improvise an on the spot presentation from random powerpoint slides online."
 		},
 		{
-			"type": "activity",
+			"type": "Activity",
 			"title": "Movie Night",
 			"location": "RB 2200",
 			"start": "2019-02-16T22:30",
 			"end": "2019-02-17T00:30",
-			"description": ""
+			"description": "Feeling tired? Want something thrilling? Come watch Snowden!"
 		},
 		{
-			"type": "food",
+			"type": "Food",
 			"title": "Breakfast",
 			"location": "RB 2228",
 			"start": "2019-02-17T08:30",
 			"end": "2019-02-17T09:30",
-			"description": "The most important meal"
+			"description": "Carleton Dining Services has provided us with TODO"
 		},
 		{
-			"type": "main",
+			"type": "Main",
 			"title": "Submission Due",
 			"start": "2019-02-17T11:00",
 			"end": "2019-02-17T12:00",
-			"description": "Cram time"
+			"description": "TODO"
 		},
 		{
-			"type": "main",
+			"type": "Main",
 			"title": "Demos & Judging",
 			"location": "RB Classrooms",
 			"start": "2019-02-17T13:00",
 			"end": "2019-02-17T15:00",
-			"description": "Show off your work"
+			"description": "TODO"
 		},
 		{
-			"type": "main",
+			"type": "Main",
 			"title": "Closing Ceremony",
 			"location": "RB 2220",
 			"start": "2019-02-17T15:30",
 			"end": "2019-02-17T16:15",
-			"description": "Prizes and final words"
+			"description": "Sadly all good things come to an end… We will be saying thanks to our sponsors and giving away the prizes for the best hacks at cuHacking. We will definitely miss this and we will miss all you guys. Be sure to come back next year!"
 		}
 	]
 }
