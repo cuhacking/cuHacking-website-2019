@@ -1,7 +1,6 @@
 <template lang="pug">
   #app
     Navbar
-    Social
     Home
     Sponsors
     Schedule
@@ -19,7 +18,6 @@ import FAQ from "./components/FAQ.vue";
 import Contact from "./components/Contact.vue";
 import Schedule from "./components/Schedule.vue";
 import Footer from "./components/Footer.vue";
-import Social from "./components/Social.vue";
 import Prizes from "./components/Prizes.vue";
 
 export default {
@@ -32,7 +30,6 @@ export default {
     Contact,
     Schedule,
     Footer,
-    Social,
     Prizes
   }
 };
@@ -44,10 +41,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  background-color: #fdfdfd;
 }
 
 body {
   margin: 0;
+  background-color: rgb(253, 237, 178);
   font: normal 75% Arial, Helvetica, sans-serif;
 }
 
@@ -59,7 +58,7 @@ canvas {
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 96vh;
   background-color: #fdedb2;
   background-image: url("");
   background-repeat: no-repeat;

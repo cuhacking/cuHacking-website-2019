@@ -1,7 +1,8 @@
 <template lang="pug">
-section.section
-  #faq
+section#faq.section
+  .container.is-desktop
     h3.title Frequently Asked Questions
+      //- TODO use these? a(href="#faq") Frequently Asked Questions
 
     .container.is-fluid
       .columns.is-multiline.is-centered

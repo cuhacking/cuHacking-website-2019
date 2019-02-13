@@ -1,6 +1,6 @@
 <template lang="pug">
 #register-form.register
-  h3 Almost there! 👨🏽‍💻👩🏼‍💻
+  h3.title Almost there! 👨‍💻 👩‍💻
   h4 Round two applications are closed.
   a(href="https://www.facebook.com/events/604006963349767" target="_blank") See our facebook event for more info
 </template>

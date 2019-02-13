@@ -1,17 +1,18 @@
 <template lang="pug">
-section.section
-  #schedule
+section#schedule.section
+  .container.is-desktop
     //- pre {{ endDay }}
     h3.title Schedule
 
     section
+      //- TODO make initial date current day if between startDay and endDay, otherwise make it startDay. so during the event it loads the current day's schedule
       vue-scheduler(
         disable-dialog
         :min-date="startDay"
         :max-date="endDay"
         :initial-date="startDay"
         :event-display="eventDisplay"
-        :time-range="[8, 24]"
+        :time-range="[8, 24]" 
         :events="events"
       )
 

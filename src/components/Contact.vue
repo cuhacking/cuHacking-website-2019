@@ -1,6 +1,6 @@
 <template lang="pug">
-section.section
-  #contact
+section#contact.section
+  .container.is-desktop
     h3.title Contact
 
     .form

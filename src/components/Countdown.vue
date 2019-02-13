@@ -3,57 +3,42 @@
   .level-item.has-text-centered
     div
       p.heading Days
-      p.title {{ days }}
+      p.title {{ duration.days() }}
   .level-item.has-text-centered
     div
       p.heading Hours
-      p.title {{ twoDigits(hours) }}
+      p.title {{ duration.hours() }}
   .level-item.has-text-centered
     div
       p.heading Minutes
-      p.title {{ twoDigits(minutes) }}
+      p.title {{ duration.minutes() }}
   .level-item.has-text-centered
     div
       p.heading Seconds
-      p.title {{ twoDigits(seconds) }}
+      p.title {{ duration.seconds() }}
 </template>
 
 <script>
+import moment from "moment";
+
 export default {
   name: "Countdown",
   props: {
-    date: Date
+    date: Object
   },
   data() {
     return {
-      now: Math.trunc(new Date().getTime() / 1000)
+      now: moment()
     };
   },
   mounted() {
     setInterval(() => {
-      this.now = Math.trunc(new Date().getTime() / 1000);
+      this.now = moment();
     }, 1000);
   },
-  methods: {
-    twoDigits(value) {
-      return (value < 10 ? "0" : "") + value;
-    }
-  },
   computed: {
-    normalizedDate() {
-      return Math.trunc(Date.parse(this.date) / 1000);
-    },
-    seconds() {
-      return (this.normalizedDate - this.now) % 60;
-    },
-    minutes() {
-      return Math.trunc((this.normalizedDate - this.now) / 60) % 60;
-    },
-    hours() {
-      return Math.trunc((this.normalizedDate - this.now) / 60 / 60) % 24;
-    },
-    days() {
-      return Math.trunc((this.normalizedDate - this.now) / 60 / 60 / 24);
+    duration() {
+      return moment.duration(this.date.diff(this.now));
     }
   }
 };

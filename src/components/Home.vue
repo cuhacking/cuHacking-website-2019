@@ -31,12 +31,14 @@ import Info from "./Front/Info";
 import Countdown from "./Countdown";
 import ScheduleData from "../assets/schedule.json";
 
+import moment from "moment";
+
 export default {
   name: "Home",
   data() {
     return {
-      start: new Date(ScheduleData.startDay),
-      end: new Date(ScheduleData.endDay)
+      start: moment(ScheduleData.startDay),
+      end: moment(ScheduleData.endDay)
     };
   },
   components: {
@@ -45,16 +47,14 @@ export default {
   },
   computed: {
     dateHTML() {
-      // TODO: Allow for different months + [st, nd, rd]
-      let options = { month: "long" };
-      let month = new Intl.DateTimeFormat("en-US", options).format(this.start);
-      let year = this.end.getFullYear();
-      let day1 = this.start.getDate();
-      let sup1 = "th";
-      let dayn = this.end.getDate();
-      let supn = "th";
-
-      return `${month} ${day1}<sup>${sup1}</sup> - ${dayn}<sup>${supn}</sup>, ${year}`;
+      return `${this.supOrdinal(
+        this.start.format("MMMM Do")
+      )} - ${this.supOrdinal(this.end.format("Do, YYYY"))}`;
+    }
+  },
+  methods: {
+    supOrdinal(dateStr) {
+      return dateStr.replace(/(\d)(st|nd|rd|th)/, `$1<sup>$2</sup>`);
     }
   }
 };

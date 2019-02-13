@@ -19,33 +19,39 @@
 		"cost": 300
 	},
 	{
+		"icon": "🚁",
 		"title": "Most Involved Hacker",
 		"prize": "Drone",
 		"cost": 100
 	},
 	{
+		"icon": "🦅",
 		"title": "Raven Award",
 		"prize": "Carleton University Long Sleeve T-Shirts",
 		"cost": 100,
 		"link": "https://www.bkstr.com/ProductDisplay?urlRequestType=Base&catalogId=10001&categoryId=10040&productId=77093165&errorViewName=ProductDisplayErrorViewtop_category=10029&storeId=10927"
 	},
 	{
+		"icon": "💾",
 		"title": "Best MLH Hardware Hack",
 		"prize": "Raspberry Pi Model A+",
 		"cost": 100,
 		"link": "https://www.buyapi.ca/product/raspberry-pi-model-a-256mb-ram"
 	},
 	{
+		"icon": "🌺",
 		"title": "Best UI/UX Hack",
 		"prize": "Invision Subscription"
 	},
 	{
+		"icon": "💁‍♂️",
 		"title": "Most Popular Hack (Devpost)",
 		"prize": "Drinkable Lego Mug",
 		"cost": 70,
 		"link": "https://www.amazon.ca/dp/B07BZLTGYD"
 	},
 	{
+		"icon": "🐶",
 		"title": "Underdog Award (High School)",
 		"prize": "Prize from SCS"
 	}

@@ -1,7 +1,7 @@
 <template lang="pug">
-nav.navbar.is-transparent(role='navigation' aria-label='main navigation')
+nav.navbar.is-transparent.is-fixed-top(role='navigation' aria-label='main navigation')
   .navbar-brand
-    a.navbar-item(href='/')
+    a.navbar-item(@click="scrollToTop")
       img(src='img/logo.png')
       h2: b cuHacking
     a.navbar-burger.burger(role='button' aria-label='menu' aria-expanded='false' data-target='nav' @click='show = !show' :class="{ 'is-active': show }")
@@ -10,8 +10,6 @@ nav.navbar.is-transparent(role='navigation' aria-label='main navigation')
       span(aria-hidden='true')
   #nav.navbar-menu(:class="{ 'is-active': show }")
     .navbar-start
-      a.navbar-item(href='#home')
-        | Home
       a.navbar-item(href='#sponsors')
         | Sponsors
       a.navbar-item(href='#schedule')
@@ -21,6 +19,9 @@ nav.navbar.is-transparent(role='navigation' aria-label='main navigation')
       a.navbar-item(href='#contact')
         | Contact
     .navbar-end
+      //- TODO fix these icons
+      a.navbar-item(v-for="social in socials" :href="social.link", target="_blank", :title="social.name")
+        b-icon(:icon="social.icon" pack="fab" type="is-black")
       a#mlh-trust-badge(href='https://mlh.io/seasons/na-2019/events', target='_blank')
         img(src='/img/mlh_banner.svg')
 
@@ -28,12 +29,20 @@ nav.navbar.is-transparent(role='navigation' aria-label='main navigation')
 </template>
 
 <script>
+import SocialData from "../assets/socials.json";
+
 export default {
   name: "Navbar",
   data() {
     return {
-      show: false
+      show: false,
+      socials: SocialData
     };
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    }
   }
 };
 </script>
@@ -48,7 +57,13 @@ export default {
   top: 0
   width: 10%
   z-index: 60000
-  
-.navbar-item img
-  margin-right: 10px
+
+nav
+  background-color: rgba(253, 237, 178, 0.7)
+
+.navbar-end
+  margin-right: 200px
+
+img
+  margin-right: 15px
 </style>
