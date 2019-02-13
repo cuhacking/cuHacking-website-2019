@@ -1,45 +1,100 @@
 <template lang="pug">
 section#schedule.section
   .container.is-desktop
-    //- pre {{ endDay }}
-    h3.title Schedule
+    h3.title
+      a(href="#schedule") Schedule
 
-    section
-      //- TODO make initial date current day if between startDay and endDay, otherwise make it startDay. so during the event it loads the current day's schedule
-      vue-scheduler(
-        disable-dialog
-        :min-date="startDay"
-        :max-date="endDay"
-        :initial-date="startDay"
-        :event-display="eventDisplay"
-        :time-range="[8, 24]" 
-        :events="events"
+    .columns
+      calendar.column(
+        ref="calendar"
+        :calendars="calendarList"
+        :schedules="events"
+        view="day"
+        :isReadOnly="true"
+        :taskView="false"
+        :scheduleView="['time']"
+        :week="{ hourStart: 7 }"
+      )
+      calendar.column(
+        ref="calendar2"
+        :calendars="calendarList"
+        :schedules="events"
+        view="day"
+        :isReadOnly="true"
+        :taskView="false"
+        :scheduleView="['time']"
+        :week="{ hourStart: 7, hourEnd: 18 }"
       )
 
-    //- pre {{ events }}
 </template>
 
 <script>
 import ScheduleData from "../assets/schedule.json";
 import moment from "moment";
 
+import "tui-calendar/dist/tui-calendar.css";
+import { Calendar } from "@toast-ui/vue-calendar";
+
 export default {
   name: "Schedule",
   data() {
     return {
-      events: this.buildEvents(ScheduleData.events),
+      events: this.buildEvents(ScheduleData.events, ScheduleData.eventTypes),
       startDay: moment(ScheduleData.startDay),
-      endDay: moment(ScheduleData.endDay)
+      endDay: moment(ScheduleData.endDay),
+      calendarList: [
+        {
+          id: "1",
+          name: "main",
+          bgColor: "#74b9ff"
+        },
+        {
+          id: "2",
+          name: "food",
+          bgColor: "#55efc4"
+        },
+        {
+          id: "3",
+          name: "workshop",
+          bgColor: "#a29bfe"
+        },
+        {
+          id: "4",
+          name: "activity",
+          bgColor: "#ff7675"
+        }
+      ]
     };
+  },
+  components: {
+    Calendar
+  },
+  mounted() {
+    setTimeout(() => {
+      let s = this.$el.querySelectorAll(
+        ".tui-full-calendar-vlayout-area.tui-full-calendar-vlayout-container"
+      );
+
+      // Set proper height to the calendars once they have loaded.
+      for (let j of s) {
+        j.style.height = "100%";
+        j.childNodes[0].style.height = "100%";
+      }
+    }, 10);
+
+    this.$refs.calendar.invoke("setDate", this.startDay);
+    this.$refs.calendar2.invoke("setDate", this.endDay);
   },
   methods: {
     eventDisplay(event) {
       return event.name + " - " + event.location;
     },
-    buildEvents(original) {
+    buildEvents(original, evTypes) {
+      let currentId = 1;
       for (let ev of original) {
-        ev.date = moment(ScheduleData.startDay).add(ev.day, "d");
-        // ev.style = "background-color: green; color: green;"
+        ev.id = currentId++;
+        ev.calendarId = evTypes[ev.type];
+        ev.category = "time";
       }
       return original;
     }
@@ -48,4 +103,6 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+.tui-view-7
+  height: auto !important
 </style>

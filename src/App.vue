@@ -65,4 +65,8 @@ canvas {
   background-size: cover;
   background-position: 50% 50%;
 }
+
+.section {
+  padding: 5rem 1.5rem 3rem !important;
+}
 </style>

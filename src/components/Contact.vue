@@ -1,7 +1,8 @@
 <template lang="pug">
 section#contact.section
   .container.is-desktop
-    h3.title Contact
+    h3.title
+      a(href="#contact") Contact
 
     .form
       b-field(horizontal label='Name')

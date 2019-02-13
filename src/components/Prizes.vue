@@ -1,7 +1,9 @@
 <template lang="pug">
 section#prizes.section
   .container.is-desktop
-    h3.title Prizes
+    h3.title
+      a(href="#prizes") Prizes
+
 
     h4.subtitle Total amount in prizes: ${{ totalCost }}
     .container.is-fluid

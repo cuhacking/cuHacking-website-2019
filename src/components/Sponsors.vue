@@ -1,7 +1,8 @@
 <template lang="pug">
 section#sponsors.section
   .container.is-desktop
-    h3.title Sponsors
+    h3.title
+      a(href="#sponsors") Sponsors
 
     .container.is-fluid
       .columns.is-multiline.is-centered

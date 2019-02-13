@@ -9,6 +9,7 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "@toast-ui/vue-calendar": "^1.0.3",
     "buefy": "^0.7.2",
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",

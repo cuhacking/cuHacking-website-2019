@@ -19,7 +19,7 @@ nav.navbar.is-transparent.is-fixed-top(role='navigation' aria-label='main naviga
       a.navbar-item(href='#contact')
         | Contact
     .navbar-end
-      //- TODO fix these icons
+      //- TODO stop these icons from being added to burger menu
       a.navbar-item(v-for="social in socials" :href="social.link", target="_blank", :title="social.name")
         b-icon(:icon="social.icon" pack="fab" type="is-black")
       a#mlh-trust-badge(href='https://mlh.io/seasons/na-2019/events', target='_blank')
@@ -56,10 +56,11 @@ export default {
   right: 50px
   top: 0
   width: 10%
-  z-index: 60000
+  z-index: 10
 
 nav
   background-color: rgba(253, 237, 178, 0.7)
+  border-bottom: rgb(233, 217, 158) solid 2px
 
 .navbar-end
   margin-right: 200px
