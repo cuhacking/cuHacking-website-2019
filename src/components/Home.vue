@@ -10,13 +10,19 @@ section#home.hero.is-fullheight-with-navbar
     :clickEffect="false"
   )
   .hero-body
-    .container
+    .container.has-text-centered
       img.logo(src="img/logo_text.png" alt="cuHacking Logo")
       h1.title(v-html="dateHTML")
       h2.subtitle
         | @ 
-        a(href="https://carleton.ca") Carleton University 
-      <Info />
+        a(href="https://carleton.ca") Carleton University
+      .box
+        .columns
+          .column.is-three-fifths
+            b What is cuHacking?
+            p Carleton University's cuHacking longest running student-led MLH hackathon in Ottawa. The hackathon takes place over 24 hours, non-stop! Students can compete against each other and themselves to take their projects from concept to reality.
+          .column
+            <Info />
       <Countdown :date="this.start"/>
 </template>
 
@@ -54,7 +60,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style scoped lang="stylus">
 .logo
   height: 400px
 </style>

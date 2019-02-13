@@ -10,12 +10,15 @@
   },
   "dependencies": {
     "buefy": "^0.7.2",
+    "moment": "^2.24.0",
     "node-sass": "^4.11.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.1.0",
+    "v-calendar-scheduler": "^0.7.4",
     "vue": "^2.5.21",
-    "vue-particles": "^1.0.9"
+    "vue-particles": "^1.0.9",
+    "vuex": "^3.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.3.0",

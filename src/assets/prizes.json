@@ -1,16 +1,19 @@
 [
 	{
+		"icon": "🥇",
 		"title": "1st Place",
 		"prize": "Ada Fruit",
 		"cost": 500,
 		"link": "https://www.adafruit.com/product/3268"
 	},
 	{
+		"icon": "🥈",
 		"title": "2nd Place",
 		"prize": "VR Sets",
 		"cost": 400
 	},
 	{
+		"icon": "🥉",
 		"title": "3rd Place",
 		"prize": "Wireless Earphones",
 		"cost": 300

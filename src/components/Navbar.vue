@@ -2,8 +2,8 @@
 nav.navbar.is-transparent(role='navigation' aria-label='main navigation')
   .navbar-brand
     a.navbar-item(href='/')
-      img(src='/img/logo.png' height='28')
-      h2 cuHacking
+      img(src='img/logo.png')
+      h2: b cuHacking
     a.navbar-burger.burger(role='button' aria-label='menu' aria-expanded='false' data-target='nav' @click='show = !show' :class="{ 'is-active': show }")
       span(aria-hidden='true')
       span(aria-hidden='true')

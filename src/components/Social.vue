@@ -1,7 +1,7 @@
 <template lang="pug">
 .social
   a(v-for="social in socials" :href="social.link", target="_blank", :title="social.name")
-    b-icon(:icon="social.icon" size="is-medium" type="is-white")
+    b-icon(:icon="social.icon" pack="fab" type="is-white")
 
 </template>
 
@@ -27,7 +27,7 @@ export default {
   left: -4px;
   display: flex;
   padding: 10px;
-  background: #333;
+  background: #222;
   flex-direction: column;
   margin-top: 0;
   z-index: 70000;

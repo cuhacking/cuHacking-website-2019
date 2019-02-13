@@ -1,7 +1,7 @@
 <template lang="pug">
 section.section
   #prizes
-    h3.thick.bg Prizes
+    h3.title Prizes
 
     p Total amount in prizes: ${{ totalCost }}
     .container.is-fluid

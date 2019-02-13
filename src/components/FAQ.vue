@@ -1,12 +1,15 @@
 <template lang="pug">
 section.section
   #faq
-    h3.thick.bg Frequently Asked Questions
+    h3.title Frequently Asked Questions
 
     .container.is-fluid
-      .columns.is-multiline.is-centered.is-vcentered
+      .columns.is-multiline.is-centered
         .column.is-one-third(v-for="qa in questions" v-bind:key="qa.question")
-          p(v-html="convert(qa)")
+          h4
+            span {{ qa.icon }} 
+            b {{ qa.question }}
+          p(v-html="qa.answer")
 
 </template>
 
@@ -19,14 +22,11 @@ export default {
     return {
       questions: QuestionData
     };
-  },
-  methods: {
-    convert(qa) {
-      return `${qa.question} - ${qa.answer}`;
-    }
   }
 };
 </script>
 
 <style scoped lang="stylus">
+h4 span
+  font-size: 28px
 </style>

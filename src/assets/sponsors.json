@@ -24,10 +24,16 @@
 			"img": "qlik.png"
 		}
 	],
-	"kilo": [],
+	"kilo": [
+		{
+			"name": "FreshBooks",
+			"link": "https://www.freshbooks.com",
+			"img": "freshbooks.png"
+		}
+	],
 	"micro": [
 		{
-			"name": "STYLElectronic Arts",
+			"name": "Electronic Arts",
 			"link": "https://ea.com",
 			"img": "ea.png"
 		},

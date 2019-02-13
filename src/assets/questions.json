@@ -1,57 +1,71 @@
 [
 	{
+		"icon": "🕑",
 		"question": "Can I work on my hack before the event?",
 		"answer": "In order to make the event fair, everyone starts their hack only once the event officially begins. We recommend setting up your environment (install Xcode, Android Studio, Git, etc) but don’t start hacking until the event!"
 	},
 	{
+		"icon": "👜",
 		"question": "What should I bring?",
-		"answer": "Your laptop, charger, a piece of ID and your creativity! We also recommend bringing a sleeping bag and basic toiletries. Leave the rest to us! Breakfast, lunch, and dinner will be provided along with snacks and drinks."
+		"answer": "Your laptop, charger, a piece of ID and your creativity! We also recommend basic toiletries. Leave the rest to us! Breakfast, lunch, and dinner will be provided."
 	},
 	{
+		"icon": "🚌",
 		"question": "Are you sending buses to: Toronto, Montreal, Waterloo?",
 		"answer": "We definitely want to; we are looking into it but we make no promises."
 	},
 	{
+		"icon": "⚖",
 		"question": "Is there a code of conduct?",
 		"answer": "Yes. We want to ensure that everyone feels comfortable and safe while attending cuHacking. You can find the code of conduct <a href='https://static.mlh.io/docs/mlh-code-of-conduct.pdf'>here</a>."
 	},
 	{
+		"icon": "💰",
 		"question": "How much does it cost?",
 		"answer": "The event is entirely free! (And we'll even take care of the food)"
 	},
 	{
+		"icon": "💻",
 		"question": "Will hardware be provided?",
 		"answer": "Yes! A hardware lab provided by MLH will be available with Arduinos, Oculus Rifts, Amazon Echoes, and more! You can find the list of all available hardware <a href='https://hack.mlh.io/hardware/'>here</a>."
 	},
 	{
+		"icon": "💬",
 		"question": "I still have so many questions!",
 		"answer": "Fill out our contact form or message us on Facebook and we’ll be happy to answer any other questions you have :)"
 	},
 	{
+		"icon": "😱",
 		"question": "What if I don't have a team?",
 		"answer": "Don’t worry if you don’t have a team prior to the event, there will be plenty of opportunities to meet other hackers and form teams when you get here!"
 	},
 	{
+		"icon": "👥",
 		"question": "How many people can be on a team?",
 		"answer": "Teams are made of up to 4 people. Take this opportunity to make new friends and work with people from different schools and skill levels."
 	},
 	{
+		"icon": "🚗",
 		"question": "Will there be travel reimbursements?",
 		"answer": "Travel reimbursement may be offered depending on your location of travel. In your application, let us know where you're coming from and we'll let you know if you're eligible for reimbursement!"
 	},
 	{
+		"icon": "🚀",
 		"question": "What is a hackathon?",
 		"answer": "Think of it as a marathon of building and learning new things. Be it an app, website, or hardware hack, the sky's the limit! Anyone who has an interest in technology is welcome to attend this 24 hour event. The goal is to learn something new!"
 	},
 	{
+		"icon": "📆",
 		"question": "When is cuHacking?",
 		"answer": "cuHacking will take place from February 16th morning to 17th, 2019 afternoon."
 	},
 	{
+		"icon": "🙋",
 		"question": "Who can participate?",
 		"answer": "Any university or college student can apply, regardless of program. (high school students in Ottawa, feel free to reach out to us in the Contact Us section below)."
 	},
 	{
+		"icon": "😎",
 		"question": "What if I'm not experienced... Should I still apply?",
 		"answer": "Definitely! Whether it’s ideas, coding, design, or a really smooth pitch, everyone can bring something to the table. This is a great opportunity to learn something new, meet like minded people, and just have a fantastic time."
 	}

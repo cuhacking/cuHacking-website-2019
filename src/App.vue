@@ -43,7 +43,6 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
@@ -66,33 +65,5 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-}
-
-h3.thick {
-  font-size: 60px;
-  padding-bottom: 35px;
-  margin-top: 0px;
-  padding-top: 0px;
-  font-weight: 800;
-  color: #222;
-}
-
-.bg {
-  width: 100%;
-  font-size: 60px;
-  padding-top: 30px !important;
-  padding-bottom: 30px !important;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-weight: 800;
-  color: $white !important;
-  background: $secondary;
-  background: linear-gradient(
-    to bottom,
-    #9f021d 0%,
-    #9f021d 36%,
-    #9f021d 72%,
-    #9f021d 100%
-  );
 }
 </style>

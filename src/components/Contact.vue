@@ -1,20 +1,21 @@
 <template lang="pug">
 section.section
   #contact
-    h3.thick.bg Contact
+    h3.title Contact
 
     .form
-      b-field(horizontal='' label='Subject')
-        b-input(name='subject', expanded='')
-      b-field(horizontal='', label='From')
-        b-input(name='name', placeholder='Name', expanded='')
-        b-input(name='email', type='email', placeholder='nobody@nowhere.com', expanded='')
-      b-field(horizontal='', label='Message')
-        b-input(type='textarea')
+      b-field(horizontal label='Name')
+        b-input(v-model='name')
+      b-field(horizontal label='Email')
+        b-input(v-model='email' type='email')
+      b-field(horizontal, label='Subject')
+        b-input(v-model='subject')
+      b-field(horizontal label='Message')
+        b-input(v-model='message' type='textarea')
       b-field(horizontal='')
         // Label left empty for spacing
         p.control
-          button.button.is-primary
+          button.button.is-primary(@click="sendEmail")
             | Send message
 
 
@@ -24,7 +25,17 @@ section.section
 export default {
   name: "Contact",
   data() {
-    return {};
+    return {
+      name: "",
+      email: "",
+      subject: "",
+      message: ""
+    };
+  },
+  methods: {
+    sendEmail() {
+      // this.$http.post("https://formspree.io/info@cuhacking.com", )
+    }
   }
 };
 </script>
