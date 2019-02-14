@@ -3,6 +3,9 @@
 # abort on errors
 set -e
 
+# delete existing files
+rm -rf dist
+
 # build
 npm run build
 
