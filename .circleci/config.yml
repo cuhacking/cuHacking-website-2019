@@ -6,4 +6,5 @@ orbs:
 workflows:
   "Build":
     jobs:
-      - node/helloworld
+      - run: npm install
+      - run: npm run test:unit
