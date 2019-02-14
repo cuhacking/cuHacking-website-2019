@@ -46,6 +46,7 @@ jobs:
 
               npm run build
 
+              echo "cuhacking.com" > CNAME
               cp -a dist/. out/.
 
               mkdir -p out/.circleci && cp -a .circleci/. out/.circleci/.
