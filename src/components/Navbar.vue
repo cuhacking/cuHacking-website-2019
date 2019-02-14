@@ -16,8 +16,8 @@ nav.navbar.is-transparent.is-fixed-top(role='navigation' aria-label='main naviga
         | Schedule
       a.navbar-item(href='#faq')
         | FAQ
-      a.navbar-item(href='#contact')
-        | Contact
+      //- a.navbar-item(href='#contact')
+        //- | Contact
     .navbar-end
       //- TODO stop these icons from being added to burger menu
       a.navbar-item(v-for="social in socials" :href="social.link", target="_blank", :title="social.name")

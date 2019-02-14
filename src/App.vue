@@ -6,7 +6,7 @@
     Schedule
     Prizes
     FAQ
-    Contact
+    //- Contact
     Footer
 </template>
 
@@ -15,7 +15,7 @@ import Navbar from "./components/Navbar.vue";
 import Home from "./components/Home.vue";
 import Sponsors from "./components/Sponsors.vue";
 import FAQ from "./components/FAQ.vue";
-import Contact from "./components/Contact.vue";
+// import Contact from "./components/Contact.vue";
 import Schedule from "./components/Schedule.vue";
 import Footer from "./components/Footer.vue";
 import Prizes from "./components/Prizes.vue";
@@ -27,7 +27,7 @@ export default {
     Home,
     Sponsors,
     FAQ,
-    Contact,
+    // Contact,
     Schedule,
     Footer,
     Prizes
