@@ -92,7 +92,7 @@
 			"type": "Workshop",
 			"title": "Android Workshop",
 			"location": "RB 2311",
-			"start": "2019-02-16T16:00",
+			"start": "2019-02-16T15:45",
 			"end": "2019-02-16T16:45",
 			"description": "TODO"
 		},
@@ -108,7 +108,7 @@
 			"type": "Workshop",
 			"title": "Tech Panel",
 			"location": "RB 2200",
-			"start": "2019-02-16T16:15",
+			"start": "2019-02-16T16:00",
 			"end": "2019-02-16T17:45",
 			"description": "TODO"
 		},
@@ -122,7 +122,7 @@
 		},
 		{
 			"type": "Workshop",
-			"title": "Intro to Site Reliability Seminar",
+			"title": "March Networks Workshop",
 			"location": "RB 2311",
 			"start": "2019-02-16T17:45",
 			"end": "2019-02-16T18:30",
@@ -149,7 +149,7 @@
 			"title": "Smash Ultimate + Mario Kart Tournaments",
 			"location": "RB 2311",
 			"start": "2019-02-16T20:00",
-			"end": "2019-02-16T21:00",
+			"end": "2019-02-16T22:30",
 			"description": "Smash Ultimate and the new Mario Kart were recently released on the switch. Compete against other hackers and sponsors to win EA games!"
 		},
 		{
@@ -157,15 +157,23 @@
 			"title": "Slideshow Karaoke",
 			"location": "RB 3201",
 			"start": "2019-02-16T20:45",
-			"end": "2019-02-16T22:15",
+			"end": "2019-02-16T21:30",
+			"description": "ow off your improve skills as you do try to improvise an on the spot presentation from random powerpoint slides online."
+		},
+		{
+			"type": "Activity",
+			"title": "Midnight Activity",
+			"location": "",
+			"start": "2019-02-16T23:30",
+			"end": "2019-02-17T00:30",
 			"description": "ow off your improve skills as you do try to improvise an on the spot presentation from random powerpoint slides online."
 		},
 		{
 			"type": "Activity",
 			"title": "Movie Night",
-			"location": "RB 2200",
+			"location": "River Building",
 			"start": "2019-02-16T22:30",
-			"end": "2019-02-17T00:30",
+			"end": "2019-02-17T00:45",
 			"description": "Feeling tired? Want something thrilling? Come watch Snowden!"
 		},
 		{
