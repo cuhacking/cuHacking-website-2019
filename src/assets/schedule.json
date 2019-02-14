@@ -163,7 +163,7 @@
 		{
 			"type": "Activity",
 			"title": "Midnight Activity",
-			"location": "",
+			"location": "River Building",
 			"start": "2019-02-16T23:30",
 			"end": "2019-02-17T00:30",
 			"description": "ow off your improve skills as you do try to improvise an on the spot presentation from random powerpoint slides online."
@@ -171,7 +171,7 @@
 		{
 			"type": "Activity",
 			"title": "Movie Night",
-			"location": "River Building",
+			"location": "RB 2200",
 			"start": "2019-02-16T22:30",
 			"end": "2019-02-17T00:45",
 			"description": "Feeling tired? Want something thrilling? Come watch Snowden!"
@@ -204,7 +204,7 @@
 			"title": "Closing Ceremony",
 			"location": "RB 2220",
 			"start": "2019-02-17T15:30",
-			"end": "2019-02-17T16:15",
+			"end": "2019-02-17T16:45",
 			"description": "Sadly all good things come to an end… We will be saying thanks to our sponsors and giving away the prizes for the best hacks at cuHacking. We will definitely miss this and we will miss all you guys. Be sure to come back next year!"
 		}
 	]
