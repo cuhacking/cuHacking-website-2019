@@ -5,5 +5,7 @@ jobs:
       - image: circleci/node
     steps:
       - checkout
+      - run: git config --global user.email $email
+      - run: git config --global user.name $name
       - run: npm install
       - run: ./deploy.sh
