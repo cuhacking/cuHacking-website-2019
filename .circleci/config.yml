@@ -8,11 +8,11 @@ jobs:
       - image: circleci/node
     steps:
       - run:
-        name: Install dependencies
-        command: npm install
+          name: Install dependencies
+          command: npm install
       - run:
-        name: Test
-        command: npm run test:unit
+          name: Test
+          command: npm run test:unit
 
 workflows:
   version: 2
