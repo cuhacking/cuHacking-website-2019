@@ -13,8 +13,8 @@ jobs:
       - TARGET_BRANCH: gh-pages
     steps:
       - add_ssh_keys:
-        fingerprints:
-          - "SO:ME:FIN:G:ER:PR:IN:T"
+          fingerprints:
+            - "02:99:76:c3:65:09:23:45:ba:21:04:49:f0:c3:c4:8a"
       - checkout
       - restore_cache:
           keys:
