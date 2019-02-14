@@ -12,6 +12,9 @@ jobs:
       - SOURCE_BRANCH: master
       - TARGET_BRANCH: gh-pages
     steps:
+      - add_ssh_keys:
+        fingerprints:
+          - "SO:ME:FIN:G:ER:PR:IN:T"
       - checkout
       - restore_cache:
           keys:
