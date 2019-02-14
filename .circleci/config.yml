@@ -1,21 +1,9 @@
-version: 2
-orbs:
-  node: circleci/node@0.0.7
+version: 2.1
 
-jobs:
-  test:
-    docker:
-      - image: circleci/node
-    steps:
-      - run:
-          name: Install dependencies
-          command: npm install
-      - run:
-          name: Test
-          command: npm run test:unit
+orbs:
+    hello: circleci/hello-build@0.0.5
 
 workflows:
-  version: 2
-  build:
-    jobs:
-      - test
+    "Hello Workflow":
+        jobs:
+          - hello/hello-build
