@@ -6,6 +6,4 @@ orbs:
 workflows:
   "Build":
     jobs:
-      executor: node
-      steps:
-        - run: echo "hello world"
+      - node/helloworld
