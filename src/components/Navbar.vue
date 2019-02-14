@@ -47,7 +47,7 @@ export default {
 };
 </script>
 
-<style scoped lang='stylus'>
+<style scoped lang="stylus">
 #mlh-trust-badge
   display: block
   max-width: 100px
