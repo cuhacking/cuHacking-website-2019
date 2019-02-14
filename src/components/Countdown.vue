@@ -1,5 +1,5 @@
 <template lang="pug">
-.level
+.level(v-if="duration > 0")
   .level-item.has-text-centered
     div
       p.heading Days
@@ -16,6 +16,8 @@
     div
       p.heading Seconds
       p.title {{ duration.seconds() }}
+
+h1.title(v-else) 🎉 Let the hacking begin! 🎊
 </template>
 
 <script>
