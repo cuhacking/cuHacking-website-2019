@@ -14,6 +14,7 @@ section#schedule.section
         :taskView="false"
         :scheduleView="['time']"
         :week="{ hourStart: 7 }"
+        :theme="theme"
       )
       calendar.column(
         ref="calendar2"
@@ -24,12 +25,15 @@ section#schedule.section
         :taskView="false"
         :scheduleView="['time']"
         :week="{ hourStart: 7, hourEnd: 18 }"
+        :theme="theme"
       )
 
 </template>
 
 <script>
 import ScheduleData from "../assets/schedule.json";
+import theme from "../assets/theme.js";
+
 import moment from "moment";
 
 import "tui-calendar/dist/tui-calendar.css";
@@ -42,26 +46,31 @@ export default {
       events: this.buildEvents(ScheduleData.events, ScheduleData.eventTypes),
       startDay: moment(ScheduleData.startDay),
       endDay: moment(ScheduleData.endDay),
+      theme: theme,
       calendarList: [
         {
           id: "1",
           name: "Main",
-          bgColor: "#74b9ff"
+          bgColor: "#74b9ff",
+          borderColor: "#74b9ff"
         },
         {
           id: "2",
           name: "Food",
-          bgColor: "#55efc4"
+          bgColor: "#55efc4",
+          borderColor: "#55efc4"
         },
         {
           id: "3",
           name: "Workshop",
-          bgColor: "#a29bfe"
+          bgColor: "#a29bfe",
+          borderColor: "#a29bfe"
         },
         {
           id: "4",
           name: "Activity",
-          bgColor: "#ff7675"
+          bgColor: "#ff7675",
+          borderColor: "#ff7675"
         }
       ]
     };
@@ -79,6 +88,26 @@ export default {
       for (let j of s) {
         j.style.height = "100%";
         j.childNodes[0].style.height = "100%";
+      }
+
+      // Remove overflow from calendar
+      let v = this.$el.querySelectorAll(
+        ".tui-full-calendar-dayname-container, .tui-full-calendar-timegrid-container"
+      );
+
+      // .tui-full-calendar-timegrid-container
+      // set height to auto
+
+      for (let j of v) {
+        j.style.overflow = "hidden";
+      }
+
+      // Deleting expand icons from the bottom of all events
+      let handles = this.$el.querySelectorAll(
+        ".tui-full-calendar-time-resize-handle"
+      );
+      for (let h of handles) {
+        h.parentNode.removeChild(h);
       }
     }, 10);
 

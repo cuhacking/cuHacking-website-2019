@@ -4,7 +4,7 @@ import Buefy from "buefy";
 import VueParticles from "vue-particles";
 import Vuex from "vuex";
 
-import "buefy/dist/buefy.css";
+import "./assets/buefy.scss";
 
 Vue.use(Vuex);
 Vue.use(VueParticles);
