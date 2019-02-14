@@ -1,10 +1,23 @@
 version: 2.1
 
-orbs:
-  node: circleci/node@0.0.7
-
-workflows:
-  "Build":
-    jobs:
-      - run: npm install
-      - run: npm run test:unit
+jobs:
+  build:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run:
+          name: update-npm
+          command: 'sudo npm install -g npm'
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: install-npm-wee
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: test
+          command: npm run test:unit
