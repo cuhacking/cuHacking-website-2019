@@ -40,7 +40,7 @@ export default {
       // TODO use first event's start time as start
       // and last event's end time as end
       start: moment(ScheduleData.startDay)
-        .add(11, "hours")
+        .add(11, "hours"),
       end: moment(ScheduleData.endDay)
     };
   },
