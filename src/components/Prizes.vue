@@ -7,13 +7,15 @@ section#prizes.section
 
     h4.subtitle Total amount in prizes: ${{ totalCost }}
     .container.is-fluid
-      .columns.is-multiline.is-centered.is-vcentered
+      .columns.is-multiline.is-vcentered
         .column.is-one-third(v-for="prize in prizes" v-bind:key="prize.title")
           h4
             span {{ prize.icon }} 
             b(v-html="prize.title")
-          p(v-if="!prize.link") - {{ prize.prize }}
-          p(v-else) - 
+          ul
+            li(v-for="item in prize.prize") {{ item }}
+          //- p(v-if="!prize.link") - {{ prize.prize }}
+          //- p(v-else) - 
             a(:href="prize.link") {{ prize.prize }}
 </template>
 
@@ -41,6 +43,8 @@ export default {
 <style scoped lang="stylus">
 h4 span
   font-size: 28px
-p
-  margin-left: 50px
+
+ul
+  list-style: circle
+  margin-left: 30px
 </style>

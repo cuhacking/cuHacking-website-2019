@@ -2,37 +2,67 @@
 	{
 		"icon": "🥇",
 		"title": "1st Place",
-		"prize": "Ada Fruit",
+		"prize": ["Ada Fruit", "2019 Hackathon Season Gold Medal"],
 		"cost": 500,
 		"link": "https://www.adafruit.com/product/3268"
 	},
 	{
 		"icon": "🥈",
 		"title": "2nd Place",
-		"prize": "VR Sets",
+		"prize": ["VR Sets", "2019 Hackathon Season Silver Medal"],
 		"cost": 400
 	},
 	{
 		"icon": "🥉",
 		"title": "3rd Place",
-		"prize": "Wireless Earphones",
+		"prize": ["Wireless Earphones", "2019 Hackathon Season Bronze Medal"],
 		"cost": 300
 	},
 	{
 		"icon": "🦅",
 		"title": "Raven Award",
-		"prize": "Carleton University Long Sleeve T-Shirts",
+		"prize": ["Carleton University Long Sleeve T-Shirts"],
 		"cost": 100,
 		"link": "https://www.bkstr.com/ProductDisplay?urlRequestType=Base&catalogId=10001&categoryId=10040&productId=77093165&errorViewName=ProductDisplayErrorViewtop_category=10029&storeId=10927"
 	},
 	{
 		"icon": "🌺",
 		"title": "Best UI/UX Hack",
-		"prize": "Invision Subscription"
+		"prize": ["Invision Subscription"]
 	},
 	{
 		"icon": "🐶",
 		"title": "Underdog Award (High School)",
-		"prize": "Prize from SCS"
+		"prize": ["Prize from SCS"]
+	},
+	{
+		"icon": "🍓",
+		"title": "Best Domain.com Domain Name",
+		"cost": 240,
+		"prize": ["Raspberry Pi", "PiHut Essentials Kit"]
+	},
+	{
+		"icon": "☁",
+		"cost": 320,
+		"title": "Best use of Google Cloud Platform",
+		"prize": ["Google Home Mini"]
+	},
+	{
+		"icon": "🐉",
+		"cost": 300,
+		"title": "Best IoT Hack using Qualcomm Device",
+		"prize": ["DragonBoard 410C"]
+	},
+	{
+		"icon": "👻",
+		"cost": 800,
+		"title": "Best use of SnapKit",
+		"prize": ["Casio Calculator Watch or Spectacles by Snapchat"]
+	},
+	{
+		"icon": "🐙🐈",
+		"cost": 15,
+		"title": "Best Octocat Drawing",
+		"prize": ["Octocat Plushie"]
 	}
 ]
