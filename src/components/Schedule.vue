@@ -109,7 +109,7 @@ export default {
       for (let h of handles) {
         h.parentNode.removeChild(h);
       }
-    }, 10);
+    }, 100);
 
     this.$refs.calendar.invoke("setDate", this.startDay);
     this.$refs.calendar2.invoke("setDate", this.endDay);
