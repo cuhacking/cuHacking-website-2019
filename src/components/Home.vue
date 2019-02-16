@@ -37,11 +37,9 @@ export default {
   name: "Home",
   data() {
     return {
-      // TODO use first event's start time as start
+      // TODO use event's start time as start
       // and last event's end time as end
-      start: moment(ScheduleData.startDay)
-        .add(8, "hours")
-        .add(30, "minutes"),
+      start: moment(ScheduleData.startDay).add(11, "hours"),
       end: moment(ScheduleData.endDay)
     };
   },
