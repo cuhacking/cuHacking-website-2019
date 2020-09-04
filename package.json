@@ -12,7 +12,7 @@
     "@toast-ui/vue-calendar": "^1.0.3",
     "buefy": "^0.7.2",
     "moment": "^2.24.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.1.0",
